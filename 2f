@@ -1,0 +1,55 @@
+clear variables;
+syms t
+Ts = 1;   % Sampling time
+x = 0:Ts:50; % support of signal
+b = cos(2*pi*x/7);
+
+%x1=b_FT(x);
+stem(x,b)
+%axis ([-.5 .5 0 4])
+
+title('Graph of X[n] with Sampling Frequency of 1 Hz')
+xlabel('Sampling Frequency');
+ylabel('Magnitude')
+
+clear variables;
+syms t
+Ts = 3;   % Sampling time
+x = 0:Ts:50; % support of signal
+b = cos(2*pi*x/7);
+
+%x1=b_FT(x);
+stem(x,b)
+%axis ([-.5 .5 0 4])
+
+title('Graph of X[n] with Sampling Frequency of 3 Hz')
+xlabel('Sampling Frequency');
+ylabel('Magnitude')
+
+clear variables;
+syms t
+Ts = 2.5;   % Sampling time
+x = 0:Ts:50; % support of signal
+b = cos(2*pi*x/7);
+
+%x1=b_FT(x);
+stem(x,b)
+%axis ([-.5 .5 0 4])
+
+title('Graph of X[n] with Sampling Frequency of 2.5 Hz')
+xlabel('Sampling Frequency');
+ylabel('Magnitude')
+
+clear variables;
+syms t
+Ts = pi;   % Sampling time
+x = 0:Ts:50; % support of signal
+b = cos(2*pi*x/7);
+
+%x1=b_FT(x);
+stem(x,b)
+%axis ([-.5 .5 0 4])
+
+title('Graph of X[n] with Sampling Frequency of pi Hz')
+xlabel('Sampling Frequency');
+ylabel('Magnitude')
