@@ -1,0 +1,9 @@
+%DSP Lab 2 Problem 3d
+Ns = 1;
+n=0:Ns:10;
+y=n.*n.*heaviside(n);
+stem(y)
+
+title('Graph of Stem Plot 4')
+xlabel('n');
+ylabel('Magnitude')
