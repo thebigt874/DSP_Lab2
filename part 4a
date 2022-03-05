@@ -1,0 +1,9 @@
+%DSP Lab 2 Problem 4a
+Ns = 1;
+n=0:Ns:50;
+y=5*cos(((pi/4)^2).*n).*heaviside(n);
+plot(n,y)
+
+title('Graph of Possible Bounded Signal')
+xlabel('n');
+ylabel('Magnitude')
