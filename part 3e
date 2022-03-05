@@ -1,0 +1,9 @@
+%DSP Lab 2 Problem 3e
+Ns = 1;
+n=0:Ns:30;
+y=3.*(n-3).*(n-3).*exp(-.3*n).*sin(2*n/3).*heaviside(n);
+stem(y)
+
+title('Graph of Stem Plot 5')
+xlabel('n');
+ylabel('Magnitude')
