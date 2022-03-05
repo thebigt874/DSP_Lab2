@@ -1,0 +1,11 @@
+clear variables;
+clf;
+
+syms k x;
+
+F1=symsum((1/(k*k)),k,1,x);
+
+fplot(F1,[1 10000])
+title('Convergence');
+xlabel('n');
+ylabel('Sum');
