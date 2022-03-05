@@ -1,0 +1,9 @@
+%DSP Lab 2 Problem 3a
+Ns = 1;
+n=0:Ns:12;
+y=heaviside(n-5)-2*heaviside(n-8)+6*heaviside(n-11);
+stem(y)
+
+title('Graph of Stem Plot 1')
+xlabel('n');
+ylabel('Magnitude')
